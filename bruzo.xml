@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+    <musica>
+        <genero tipo='rock'>
+            <cancion>paint it black</cancion>
+            <artista>rolling stones</artista>
+        </genero>
+        <genero tipo='rap'>
+            <cancion>it was a good day</cancion>
+            <artista>ice cube</artista>
+        </genero>
+    </musica>

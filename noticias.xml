@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE rss SYSTEM "noticias.dtd">
+<rss version="2.0">
+	<channel>
+		<title>Infobae</title>
+		<link>https://www.infobae.com</link>
+		<description>Infobae is a news website created in Argentina in 2002 by businessman Daniel Hadad. Infobae has 450 staff journalists and over a thousand stringers. Their headquarters are located in Buenos Aires. The company also has news bureaus and local editions in New York City, Mexico City, Miami, Bogotá, São Paulo and Madrid</description>
+		<pubDate/>
+		<webMaster/>
+		<language>es-ar</language>
+		<item>
+			<title>El día que Maradona conquistó a Nápoles y ganó la protección de la mafia italiana</title>
+			<link>https://www.infobae.com/america/deportes/2022/03/13/el-dia-que-maradona-conquisto-a-napoles-y-gano-la-proteccion-de-la-mafia-italiana/</link>
+			<pubDate>13/03/22</pubDate>
+		</item>
+	</channel>
+	<channel>
+		<title>La Nación</title>
+		<link>https://www.lanacion.com.ar</link>
+		<description>La Nación is an Argentine daily newspaper. As the country's leading traditional newspaper, La Nación's main competitor is the more liberal Clarín. It is regarded as a newspaper of record for Argentina. Its motto is: "La Nación will be a tribune of doctrine."</description>
+		<pubDate/>
+		<webMaster/>
+		<language/>
+		<item>
+			<title>Guerra Rusia-Ucrania. Pandemia v. guerra: ¿cuál afectará más a la Argentina y la región?</title>
+			<link>https://www.lanacion.com.ar/el-mundo/guerra-rusia-ucrania-pandemia-v-guerra-cual-afectara-mas-a-la-argentina-y-la-region-nid13032022/</link>
+			<pubDate>13/03/22</pubDate>
+		</item>
+	</channel>
+	<channel>
+		<title>Clarín</title>
+		<link>https://www.clarin.com</link>
+		<description>Clarín, is the largest newspaper in Argentina and the second most circulated in the Spanish-speaking world. It was founded by Roberto Noble in 1945, published by the Clarín Group. For many years, its director was Ernestina Herrera de Noble, the founder's wife.</description>
+		<pubDate/>
+		<webMaster/>
+		<language/>
+		<item>
+			<title>Rusia bombardeó una base militar cercana a Lviv, reportan al menos 35 muertos</title>
+			<link>https://www.clarin.com/mundo/rusia-bombardeo-base-cercana-lviv-cerca-frontera-polonia_0_HQG8VXZLvt.html</link>
+			<pubDate>13/03/22</pubDate>
+		</item>
+	</channel>
+</rss>
+

@@ -1,0 +1,2 @@
+export CLASSPATH=$CLASSPATH:/home/Salerno/XML/xerces-2_9_0/xercesSamples.jar:/home/Salerno/XML/xerces-2_9_0/xml-apis.jar:/home/Salerno/XML/xerces-2_9_0/xercesImpl.jar
+export PATH=$PATH:/usr/lib/jvm/java-7-openjdk-amd64/

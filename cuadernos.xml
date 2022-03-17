@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<cuadernos>
+	<rallado>
+		<color>Rojo</color>
+		<paginas>100</paginas>
+	</rallado>
+	<rallado>
+		<color>Azul</color>
+		<paginas>75</paginas>
+	</rallado>
+	<cuadriculado>
+		<color>Amarillo</color>
+		<paginas>200</paginas>
+	</cuadriculado>
+</cuadernos>
