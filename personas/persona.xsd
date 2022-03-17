@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="sex">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Masculino"/>
+			<xsd:enumeration value="Femenino"/>
+	</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="weight">
+			<xsd:restriction base="xsd:decimal">
+			<xsd:fractionDigits value="2"/>
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="500"/>
+	</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="telephone">
+		<xsd:restriction base="xsd:string" >
+			<xsd:pattern value="\d{4}-\d{4}" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="address">
+		<xsd:sequence>
+			<xsd:element name="street" type="xsd:string"/>
+			<xsd:element name="number" type="xsd:integer"/>
+			<xsd:element name="zipcode" type="xsd:integer"/>
+		</xsd:sequence>
+		<xsd:attribute name="type">
+			<xsd:simpleType>
+				<xsd:restriction base="xsd:string">
+					<xsd:enumeration value="Casa"/>
+					<xsd:enumeration value="Departamento"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="identificador">
+		<xsd:choice>
+			<xsd:element name="DNI" type="xsd:integer"/>
+			<xsd:element name="CUIL" type="xsd:integer"/>
+		</xsd:choice>
+	</xsd:complexType>
+	<xsd:element name="persona">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="identificador" type="identificador"/>
+				<xsd:element name="nombre" type="xsd:string"/>
+				<xsd:element name="apellido" type="xsd:string"/>
+				<xsd:element name="fechaNac" type="xsd:date"/>
+				<xsd:element name="sexo" type="sex"/>
+				<xsd:element name="peso" type="weight"/>
+				<xsd:element name="telefono" type="telephone"/>
+				<xsd:element name="direccion" type="address"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

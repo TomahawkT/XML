@@ -1,0 +1,8 @@
+<!DOCTYPE libros
+[ <!ELEMENT libros (libro,libro)>
+<!ELEMENT libro (#PCDATA)>
+]>
+<libros>
+	<libro/>
+	<libro/>
+</libros>

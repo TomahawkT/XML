@@ -1,0 +1,61 @@
+<!DOCTYPE emails SYSTEM "emails.dtd">
+<emails>
+	<email id="785">
+		<date>24/06/22</date>
+		<header/>
+		<from>
+			<name>Juan Gomez</name>
+			<address>juanito@gmail.com"</address>
+		</from>
+		<to>
+			<name>Marcos Delvan</name>
+			<address>mdelvan@itba.edu.ar</address>
+			<name>Tomas Klatz</name>
+			<address>tklatz@itba.edu.ar</address>
+		</to>
+		<subject/>
+		<body/>
+	</email>
+	<email id="456">
+		<date>24/07/22</date>
+		<header/>
+		<from>
+			<name>Lucas Perez</name>
+			<address>luqui@gmail.com</address>
+		</from>
+		<to>
+			<name>Franco Martinez</name>
+			<address>francom24@itba.edu.ar</address>
+		</to>
+		<subject/>
+		<body/>
+	</email>
+	<email id="987">
+		<date>24/08/22</date>
+		<header/>
+		<from>
+			<name>Bruno Lavann</name>
+			<address>brunol@gmail.com</address>
+		</from>
+		<to>
+			<name>Tomas Klatz</name>
+			<address>tklatz@itba.edu.ar</address>
+		</to>
+		<subject/>
+		<body/>
+	</email>
+	<email_resp id="987">
+		<date>24/08/22</date>
+		<header/>
+		<from>
+			<name>Tomas Klatz</name>
+			<address>tklatz@itba.edu.ar</address>
+		</from>
+		<to>
+			<name>Bruno Lavann</name>
+			<address>brunol@gmail.com</address>	
+		</to>
+		<subject/>
+		<body/>
+	</email_resp>
+</emails>

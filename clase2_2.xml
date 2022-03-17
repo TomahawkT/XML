@@ -1,0 +1,5 @@
+<!ELEMENT libro (titulo|listaautores|editorial)>  --> <!ELEMENT libro (#PCDATA|titulo|listaautores|editorial)*>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT listaautores (autor,autor?,autor?,autor?,autor?)>
+<!ELEMENT editorial (#PCDATA)>
+

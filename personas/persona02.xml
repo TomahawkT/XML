@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<persona xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="persona.xsd">
+	<identificador>
+		<DNI>1.000</DNI>
+	</identificador>
+	<nombre>Nombre</nombre>
+	<apellido>Apellido</apellido>
+	<fechaNac>2000-01-01</fechaNac>
+	<sexo>Masculino</sexo>
+	<peso>70.00</peso>
+	<telefono>1111-1111</telefono>
+	<direccion type="Casa">
+		<street>Calle</street>
+		<number>1111</number>
+		<zipcode>1111</zipcode>
+	</direccion>
+</persona>
+
