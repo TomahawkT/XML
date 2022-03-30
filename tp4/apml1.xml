@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<APML>
+  <Head>
+    <Title>My APML</Title>
+    <Generator>Written by Hand</Generator>
+    <UserEmail>sample@apml.org</UserEmail>
+    <DateCreated>2007-03-11T01:55:00Z</DateCreated>
+  </Head>
+  <Body defaultprofile="Work">
+    <Profile name="Work">
+      <ImplicitData>
+        <Concepts>
+          <Concept key="attention" value="0.99" from="GatheringTool.com" updated="2007-03-11T01:55:00Z" />
+          <Concept key="content distribution" value="0.97" from="GatheringTool.com" updated="2008-03-11T01:55:00Z" />
+          <Concept key="information" value="0.95" from="GatheringTool.com" updated="2008-03-11T01:55:00Z" />
+          <Concept key="business" value="0.93" from="GatheringTool.com" updated="2009-03-11T01:55:00Z" />
+          <Concept key="alerting" value="0.91" from="GatheringTool.com" updated="2009-03-11T01:55:00Z" />
+          <Concept key="intelligent agents" value="0.89" from="GatheringTool.com" updated="2007-03-11T01:55:00Z" />
+          <Concept key="development" value="0.87" from="GatheringTool.com" updated="2007-03-11T01:55:00Z" />
+          <Concept key="service" value="0.85" from="GatheringTool.com" updated="2007-03-11T01:55:00Z" />
+        </Concepts>
+        <Sources>
+          <Source key="http://feeds.feedburner.com/apmlspec" name="APML.org" value="1.00" type="application/rss+xml" from="GatheringTool.com" updated="2007-03-11T01:55:00Z">
+            <Author key="Sample" value="0.5" from="GatheringTool.com" updated="2007-03-11T01:55:00Z" />
+          </Source>
+        </Sources>
+      </ImplicitData>
+      <ExplicitData>
+        <Concepts>
+          <Concept key="direct attention" value="0.99" />
+        </Concepts>
+        <Sources>
+          <Source key="http://feeds.feedburner.com/TechCrunch" name="Techcrunch" type="application/rss+xml" value="0.4">
+            <Author key="ExplicitSample" value="0.5" />
+          </Source>
+        </Sources>
+      </ExplicitData>
+    </Profile>
+    <Profile name="Home">
+      <ImplicitData />
+      <ExplicitData>
+        <Concepts>
+          <Concept key="Golf" value="0.2" />
+	  <Concept key="Gagdgets" value="0.1" />
+	  <Concept key="Mobile" value="0.1" />
+     	  <Concept key="Politica" value="0.1" />
+ 	  <Concept key="Tecnologia" value="0.2" />
+  	  <Concept key="Software" value="0.2" />
+        </Concepts>
+        <Sources>
+          <Source key="http://feeds.feedburner.com/TechCrunch" name="Techcrunch" type="application/atom+xml" value="0.4">
+            <Author key="Techcrunch" value="0.5" />
+          </Source>
+	  <Source key="http://www.uberbin.net/feed" name="Uberbin" type="application/rss+xml" value="0.2">
+            <Author key="Denken Uber" value="0.5" />
+          </Source>
+          <Source key="http://lanacion.com.ar/herramientas/rss/index.asp" name="LaNacion.com" type="application/rss+xml" value="0.3">
+            <Author key="La Nacion Online" value="0.5" />
+          </Source>
+        </Sources>
+      </ExplicitData>
+    </Profile>
+  </Body>
+</APML>

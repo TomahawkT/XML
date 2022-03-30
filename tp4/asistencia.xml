@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <work-resources>
+        <work-resource name="Jose">
+            <work-conditions>
+                <constant-work-condition hours="8" from="2007-06-01" />
+            </work-conditions>
+        </work-resource>
+        
+        <work-resource name="Teobaldo">
+            <work-conditions>
+                <constant-work-condition hours="8" from="2007-10-10" />
+            </work-conditions>
+	    <work-exceptions>
+		<absent type="enfermedad" when="2009-03-25" comment="Estaba con fiebre" />
+		<absent type="enfermedad" when="2009-03-26" comment="Sigue con fiebre" />
+	    </work-exceptions>
+        </work-resource>
+        
+        <work-resource name="Jimena">
+            <work-conditions>
+                <constant-work-condition hours="8" from="2007-01-29" />
+            </work-conditions>
+            <work-exceptions>
+                            <absent type="asuntos personales" when="2009-01-02"/>
+                            <absent type="enfermedad" when="2009-05-05"/>
+            </work-exceptions>
+        </work-resource>
+    
+        <work-resource name="Cecilia">
+            <work-conditions>
+                <constant-work-condition hours="8" from="2007-01-29" />
+            </work-conditions>
+            <work-exceptions>
+                           <absent type="vacaciones" from="2009-02-02" to="2009-02-13" />
+            </work-exceptions>
+        </work-resource>
+        
+        <work-resource name="Luciana">
+            <work-conditions>
+                <constant-work-condition hours="8" from="2007-01-29" />
+            </work-conditions>
+            <work-exceptions>
+                            <absent type="vacaciones" from="2009-01-16" to="2009-02-06" />
+            </work-exceptions>
+        </work-resource>
+        
+        <work-resource name="Lucas">
+            <work-conditions>
+                <constant-work-condition hours="8" from="2007-01-29" />
+            </work-conditions>
+            <work-exceptions>
+                            <absent type="examen" when="2009-01-19" />
+            </work-exceptions>
+        </work-resource>
+        
+        <work-resource name="Ignacio">
+            <work-conditions>
+                <constant-work-condition hours="6" from="2007-11-26" to="2009-05-08" />
+		<constant-work-condition hours="8" from="2009-05-09" />
+            </work-conditions>
+            <work-exceptions>
+                            <absent type="vacaciones" from="2009-01-05" to="2009-01-16" />
+	    		    <absent type="desconocido" when="2009-03-11" /> 
+                            <absent type="desconocido" when="2009-03-18" />
+            </work-exceptions>  
+        </work-resource>
+        
+        <work-resource name="Marcelo">
+            <work-conditions>
+                <constant-work-condition hours="8" from="2007-07-16" />
+            </work-conditions>
+            <work-exceptions>
+                            <absent type="vacaciones" from="2009-02-09" to="2009-02-26" />
+            </work-exceptions>
+        </work-resource>  
+    </work-resources>
