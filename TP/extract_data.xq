@@ -36,23 +36,26 @@ else(
                 <recording>
                     <title>{$recording/title/string()}</title>
                     <length>{$recording/length/string()} </length>
-                    if (exists($recording/first-release-date))
-                    then (
-                        <first-release-date>{$recording/first-release-date/string()}</first-release-date>
-                        )
+                    {if (exists($recording/first-release-date))
+                    then <first-release-date>{$recording/first-release-date/string()}</first-release-date>
+                    else() }
                     {for $release in $recording/release-list/release
                         return
                         <release>
                             <title>{$release/title/string()} </title>
                             <date> {$release/date/string()} </date>
-                            if (exists($release/country))
+                            {if (exists($release/country))
                             then(<country>{$release/country/string()}</country>)
+                            else()}
                             <type> {$release/release-group/primary-type/string()} </type> 
-                            if(exists($release/release-group/secondary-type-list/secondary-type))
-                            then(<subtype>{$release/release-group/secondary-type-list/secondary-type/string()} </subtype>)
+                            {if(exists($release/release-group/secondary-type-list/secondary-type))
+                            then(<subtype>{$release/release-group/secondary-type-list/secondary-type/string()}</subtype>)
+                            else()}
                             <!-- {for $st in $release/release-group/secondary-type-list/secondary-type
                             return <subtype>{$st/string()} </subtype>}-->
-                            <track-number>{$release/medium-list/medium/track-list/track/number/string()} (:MINOCCURS=0:) </track-number>
+                            {if(exists($release/medium-list/medium/track-list/track/number))
+                            then(<track-number>{$release/medium-list/medium/track-list/track/number/string()}</track-number>)
+                            else()}
                         </release>}
                 </recording>}
             </recordings>
