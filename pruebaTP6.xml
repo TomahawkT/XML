@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<clientes>
+	<cliente codigo="A231">
+		<cuit>18-39145874-7</cuit>
+		<nombre>Luciana Estevez</nombre>
+		<direccion tipo="comercial">
+			<calle>Habana 4125</calle>
+			<localidad>CABA</localidad>
+			<cp>1419</cp>
+		  <telefono/>
+		</direccion>
+		<fechaalta mes="mar" anio="2011"/>
+	</cliente>
+	<cliente codigo="A232" referenciado="A233">
+		<cuit>18-39145874-7</cuit>
+		<nombre>Carlos Luchetti</nombre>
+		<direccion tipo="comercial">
+			<calle/>
+			<localidad>CABA</localidad>
+			<cp>1401</cp>
+			<telefono>4444-1234</telefono>
+		</direccion>
+
+		<fechaalta mes="jun"/>
+	</cliente>
+	<cliente codigo="A233">
+      <cuit>18-39145874-7</cuit>
+      <nombre>Carola Spegazinni</nombre>
+      <direccion tipo="comercial">
+          <calle/>
+          <localidad>CABA</localidad>
+          <cp>1401</cp>
+          <telefono>4428-2934</telefono>
+			</direccion>
+      <fechaalta mes="may"/>
+  </cliente>
+
+</clientes>
