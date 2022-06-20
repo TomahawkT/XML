@@ -2,7 +2,7 @@ declare variable $artist_id external;
 declare variable $a:= doc("artist_info.xml")//artist; 
 declare variable $r:= doc("recordings_info.xml");
 
-declare function local:valid_id ($artist_id) as xs:boolean
+declare function local:valid_id ($artist_id as xs:string) as xs:boolean
 {
 exists(for $var in doc("artists_list.xml")//artists_list/artist
     where $var/@arid eq $artist_id return $artist_id)
@@ -12,7 +12,7 @@ exists(for $var in doc("artists_list.xml")//artists_list/artist
 if(not(local:valid_id($artist_id)))
 then(
     <artist_data>
-        <error>ni el id pones bien sorete, si tan solo tu viejo se hubiera puesto bien el forro </error>
+        <error>Invalid artist_id. Please enter a valid id.</error>
     </artist_data>
 )
 else(
@@ -51,8 +51,6 @@ else(
                             {if(exists($release/release-group/secondary-type-list/secondary-type))
                             then(<subtype>{$release/release-group/secondary-type-list/secondary-type/string()}</subtype>)
                             else()}
-                            <!-- {for $st in $release/release-group/secondary-type-list/secondary-type
-                            return <subtype>{$st/string()} </subtype>}-->
                             {if(exists($release/medium-list/medium/track-list/track/number))
                             then(<track-number>{$release/medium-list/medium/track-list/track/number/string()}</track-number>)
                             else()}
